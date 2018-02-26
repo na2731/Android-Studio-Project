@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.intentlauncherr.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B3C5E8"/>
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your  Message"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B3C5E8"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only Send Title" />
+
+    <Button
+        style="@style/ButtonS"
+        android:onClick="sendEmail"
+        android:id="@+id/sendEmail"
+        android:text="SEND EMAIL"
+        />
+
+    <Button
+        style="@style/ButtonS"
+        android:id="@+id/Activity"
+        android:onClick="AnotherActivity"
+        android:text="LAUNCH ACTIVITY" />
+
+    <Button
+        style="@style/ButtonS"
+        android:id="@+id/Camera"
+        android:text="LAUNCH CAMERA"
+        android:onClick="openCamera"/>
+
+</LinearLayout>
+</ScrollView>
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</android.support.constraint.ConstraintLayout>
